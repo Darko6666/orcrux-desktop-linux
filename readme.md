@@ -1,24 +1,47 @@
-# ORCRUX Desktop Linux Releases
+# ORCRUX Desktop Linux
 
-  Official Linux release channel for ORCRUX Desktop.
+  Official Linux desktop builds for the ORCRUX network.
 
-  This repository publishes prebuilt Linux binaries for each desktop release:
+  This repository contains packaged Linux releases of the ORCRUX desktop client, including node, miner, wallet
+  connectivity, and synchronization tools for the ORCRUX blockchain.
+
+  ## Included formats
+
   - AppImage
-  - Debian package (.deb)
-  - RPM package (.rpm)
+  - Debian package (`.deb`)
+  - RPM package (`.rpm`)
 
-  ## Latest release
-  Download the latest binaries from the **Releases** page:
-  https://github.com/Darko6666/orcrux-desktop-linux/releases
+  ## Current release
 
-  ## Integrity verification
-  Each release includes a `SHA256SUMS` file.
-  After download:
+  Latest packaged assets are available in:
 
-  ```bash
-  sha256sum -c SHA256SUMS
+  `release/v0.1.1/`
 
-  ## About ORCRUX
+  Included files:
+  - `ORCRUX Desktop_0.1.1_amd64.deb`
+  - `ORCRUX Desktop-0.1.1-1.x86_64.rpm`
+  - `SHA256SUMS`
 
-  ORCRUX is a Proof-of-Useful-Work blockchain focused on verifiable AI workloads, community mining, and on-chain
-  utility.
+  ## Features
+
+  - Local node and miner control
+  - Wallet connection
+  - Chain synchronization status
+  - Local height, chain height, and lag visibility
+  - Available and locked balance display
+  - Workload participation for the ORCRUX network
+
+  ## Notes
+
+  The desktop uses the best available GPU backend depending on the machine and environment, including:
+  - CUDA
+  - ROCm
+  - DirectML
+
+  A lag of 0 to 1 block can be normal while the chain is actively advancing.
+
+  ## Project
+
+  Main ORCRUX project and infrastructure are maintained separately.
+  This repository is dedicated to Linux desktop release distribution.
+
